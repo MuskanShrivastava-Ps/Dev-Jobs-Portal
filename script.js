@@ -96,4 +96,4 @@ category.innerHTML = array.map(card=>
             <h3 class="category-name">${card.category}</h3>
             <span class="category-count">${card.count}</span>
         </a>`
-).join('');
+).join(''); 
