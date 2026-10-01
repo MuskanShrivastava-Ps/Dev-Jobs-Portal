@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="details-section">
+        <div class="details-header">
+            <button id="back-btn">← Back to Jobs</button>
+            <h1>Job Details</h1>
+        </div>
+        <div id="container">
+        </div>
+    </section>
+
+    <div id="multi-step-app">
+        <div id="subdiv" class="step-active">
+            <form id="subdiv-form">
+                    <button type="button" id="close-form-btn">Close</button>
+                <div id="progress-indicator">
+                    <span id="step-counter">Step 1 of 4</span>
+                    <div id="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+                <div id="personal-info" class="step-active">
+                    <label class="p-info">
+                        <span>Name:</span>
+                        <input type="text" placeholder="Enter your name">
+                    </label>
+                    <label class="p-info">
+                        <span>Email:</span>
+                        <input type="email" placeholder="Enter your email id" required>
+                    </label>
+                    <label class="p-info">
+                        <span>Phone:</span>
+                        <input type="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" 
+           title="Please enter a valid 10-digit phone number" required>
+                    </label>
+                </div>
+    
+                <div id="professional-details" class="step-hidden">
+    
+                    <div id="experience-id">
+                        <span>Experience</span>
+                        <select>
+                            <option>0-1 yrs</option>
+                            <option>2-3 yrs</option>
+                            <option>4-5 yrs</option>
+                            <option>more than 5 yrs</option>
+                        </select>
+                    </div>
+    
+                    <div class="skills-field">
+                        <label class="skills-label">Skills</label>
+    
+                        <div class="skills-options">
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="React" class="skill-checkbox">
+                                <span>React</span>
+                            </label>
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="JavaScript" class="skill-checkbox">
+                                <span>JavaScript</span>
+                            </label>
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="CSS" class="skill-checkbox">
+                                <span>CSS</span>
+                            </label>
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="Node.js" class="skill-checkbox">
+                                <span>Node.js</span>
+                            </label>
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="Python" class="skill-checkbox">
+                                <span>Python</span>
+                            </label>
+    
+                            <label class="skill-tag">
+                                <input type="checkbox" name="skills" value="SQL" class="skill-checkbox">
+                                <span>SQL</span>
+                            </label>
+    
+                        </div>
+                        <p class="skills-error" style="display:none;">Select at least one skill</p>
+                    </div>
+    
+                    <div id="portfolio">
+                        <label>
+                            <span>Portfolio Link</span>
+                            <input type="url" placeholder="https://myportfolio.com" 
+               pattern="https?://.+" 
+               title="Please enter a complete URL starting with http:// or https://" required>
+                        </label>
+                    </div>
+    
+                    <div id="linkdin">
+                        <label>
+                            <span>Linkdin Link</span>
+                            <input type="url" placeholder="https://linkedin.com" 
+               pattern="https?://.*linkedin\.com/.+" 
+               title="Please enter a valid LinkedIn profile URL (e.g., https://linkedin.com)" required>
+                        </label>
+                    </div>
+    
+                </div>
+
+                <div id="upload-section" class="step-hidden">
+                    <label>
+                        <span>Resume</span>
+                        <input type="file" accept=".pdf,.doc,.docx" required>
+                    </label>
+                    <label>
+                        <span>Cover Letter</span>
+                        <input type="file" accept=".pdf,.doc,.docx" required>
+                    </label>
+                </div>
+
+                <div id="review-section" class="step-hidden">
+                    
+                        <div class="review-row">
+                            <span class="review-label">Name:</span>
+                            <span class="review-value" id="review-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non?</span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Email:</span>
+                            <span class="review-value" id="review-email"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Phone:</span>
+                            <span class="review-value" id="review-phone"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Experience:</span>
+                            <span class="review-value" id="review-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, libero!</span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Skills:</span>
+                            <span class="review-value" id="review-skills"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Portfolio Link:</span>
+                            <span class="review-value" id="review-portfolio"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">LinkedIn Link:</span>
+                            <span class="review-value" id="review-linkedin"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Resume:</span>
+                            <span class="review-value" id="review-resume"></span>
+                        </div>
+                    
+                        <div class="review-row">
+                            <span class="review-label">Cover Letter:</span>
+                            <span class="review-value" id="review-coverletter"></span>
+                        </div>
+                    
+                    </div>
+
+                    <div id="form-footer">
+                        <button type="button" id="back-btn-form" class="step-hidden">Back</button>
+                        <button type="button" id="next-btn">Next</button>
+                        <button type="submit" id="submit-btn" class="step-hidden">Submit</button>
+                    </div>
+            </form>
+        </div>
+        <div id="success-section" class="step-hidden">
+            <div>
+                <h1>Application submitted successfully</h1>
+            </div>
+            <label id="app-id">
+                <span id="id">Application id:</span>
+                <span id="idValue"></span>
+            </label>
+            <label id="applied-date-id">
+                <span id="date">Applied date:</span>
+                <span id="dateValue"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="jobsdata.js"></script>
+    <script src="global.js"></script>
+    <script src="jobDetails.js"></script>
+</body>
+</html>  

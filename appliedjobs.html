@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+        <section id="applied-jobs-section" class="padding">
+
+            <div class="details-header applied-jobs">
+                <button id="back-btn">← Back to Home</button>
+                <h1>Applied Jobs</h1>
+            </div>
+
+            <div class="job-cards-container">
+        
+                <div class="job-card" data-category="frontend" data-location="bangalore" data-experience="3-5"
+                    data-salary="12-18" data-type="full-time">
+                    <div class="card-header">
+                        <div class="company-logo latest-badge">✨</div>
+                        <div class="top-details">
+                            <h3 class="role">Backend Developer (Node.js)</h3>
+                            <span class="company-name">CloudScale Corp</span>
+                        </div>
+                        <i class="fa-regular fa-bookmark fa-2x"></i>
+                    </div>
+                    <div class="details">
+                        <div class="left-details">
+                            <span class="location">📍 Remote, India</span>
+                            <span class="experience">💼 2-4 Yrs</span>
+                            <span class="mode">🏠 Remote</span>
+                            <span class="time-stamp">⏰ 2 hours ago</span>
+                        </div>
+                        <div class="right-details">
+                            <span class="salary">₹10 - 14 LPA</span>
+                        </div>
+                    </div>
+                    <ul class="skills">
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <div class="card-actions">
+                        <button class="btn-details">Jobs Details</button>
+                    </div>
+                </div>
+        
+        
+                <div class="job-card" data-category="frontend" data-location="bangalore" data-experience="3-5"
+                    data-salary="12-18" data-type="full-time">
+                    <div class="card-header">
+                        <div class="company-logo latest-badge">✨</div>
+                        <div class="top-details">
+                            <h3 class="role">QA Automation Engineer</h3>
+                            <span class="company-name">DataSystems Inc</span>
+                        </div>
+                        <i class="fa-regular fa-bookmark fa-2x"></i>
+                    </div>
+                    <div class="details">
+                        <div class="left-details">
+                            <span class="location">📍 Mumbai, India</span>
+                            <span class="experience">💼 1-3 Yrs</span>
+                            <span class="mode">🏢 Onsite</span>
+                            <span class="time-stamp">⏰ 5 hours ago</span>
+                        </div>
+                        <div class="right-details">
+                            <span class="salary">₹6 - 9 LPA</span>
+                        </div>
+                    </div>
+                    <ul class="skills">
+                        <li>Selenium</li>
+                        <li>Java</li>
+                    </ul>
+                    <div class="card-actions">
+                        <button class="btn-details">Jobs Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="jobsdata.js"></script>
+        <script src="render.js"></script>
+        <script src="appliedjobs.js"></script>
+</body>
+</html>
+

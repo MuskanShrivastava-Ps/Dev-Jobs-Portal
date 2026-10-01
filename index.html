@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<!-- Hero section -->
+    <section id="hero-section">
+    <nav id="navbar">
+        <div id="logo">
+            <a href="">DevJobs</a>
+        </div>
+        <div id="nav-links">
+            <a href="#featured-section">Featured Jobs</a>
+            <a href="#categories-section">Categories</a>
+            <a href="#latest-jobs-section">Latest Jobs</a>
+            <a href="appliedjobs.html">Applied Jobs</a>
+        </div>
+    </nav>
+    <header id="hero-section">
+        <div id="main">
+        <h1>Find your next <br> developer job</h1>
+        <p>Search open roles in frontend, backend, mobile and more. The list updates as you type.</p>
+        <form id="search-bar">
+            <input type="text" placeholder="Job title, company or skills">
+            <button type="button">Search</button>
+        </form>
+    </div>
+    </header></section>
+
+<!-- Categories section -->
+<section id="categories-section" class="padding">
+    <h2 class="topheading">Browse by Category</h2>
+
+    <div class="category-cards-container">
+        <a href="#" class="category-card">
+            <div class="category-icon">🎨</div>
+            <h3 class="category-name">Frontend</h3>
+            <span class="category-count">142 jobs</span>
+        </a>
+
+        <a href="#" class="category-card">
+            <div class="category-icon">⚙️</div>
+            <h3 class="category-name">Backend</h3>
+            <span class="category-count">98 jobs</span>
+        </a>
+
+        <a href="#" class="category-card">
+            <div class="category-icon">📱</div>
+            <h3 class="category-name">Mobile</h3>
+            <span class="category-count">54 jobs</span>
+        </a>
+
+        <a href="#" class="category-card">
+            <div class="category-icon">🚀</div>
+            <h3 class="category-name">DevOps</h3>
+            <span class="category-count">37 jobs</span>
+        </a>
+
+        <a href="#" class="category-card">
+            <div class="category-icon">🧪</div>
+            <h3 class="category-name">QA / Testing</h3>
+            <span class="category-count">29 jobs</span>
+        </a>
+
+        <a href="#" class="category-card">
+            <div class="category-icon">✏️</div>
+            <h3 class="category-name">UI/UX</h3>
+            <span class="category-count">21 jobs</span>
+        </a>
+    </div>
+</section>
+
+<!-- Featured section -->
+    <section id="featured-section" class="padding">
+    <h2 class="topheading">Featured Jobs</h2>
+
+    <div class="job-cards-container">
+        
+    <div class="job-card" data-category="frontend" data-location="bangalore" data-experience="3-5" data-salary="12-18" data-type="full-time">
+    <!-- Wrap the top elements into a header for alignment, keeping your exact items -->
+    <div class="card-header">
+        <div class="company-logo">💼</div> <!-- 1. The clean placeholder box -->
+        <div class="top-details">
+            <h3 class="role">Senior Frontend Developer</h3>
+            <span class="company-name">TechCorp Solutions</span>
+        </div>
+        <i class="fa-regular fa-bookmark fa-2x"></i>
+    </div>
+
+    <!-- Keeping your exact details layout entirely untouched -->
+    <div class="details">
+        <div class="left-details">
+            <span class="location">📍 Bangalore, India</span>
+            <span class="experience">💼 3-5 Yrs</span>
+            <span class="mode">🏠 Remote</span>
+        </div>
+        <div class="right-details">
+            <span class="salary">₹12 - 18 LPA</span>
+        </div>
+    </div>
+
+    <!-- Keeping your exact skills and actions lists entirely untouched -->
+    <ul class="skills">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Tailwind</li>
+    </ul>
+
+    <div class="card-actions">
+        <button type="button" class="btn-details">Job Details</button>
+    </div>
+</div>
+</div>
+<div id="loading-spinner" class="step-hidden">
+    Loading jobs...
+</div>
+</section>
+
+<!-- LatestJob section -->
+<section id="latest-jobs-section" class="padding">
+    
+    <h2 class="topheading">Latest Jobs</h2>
+    <div class="job-cards-container">
+        
+        <div class="job-card" data-category="frontend" data-location="bangalore" data-experience="3-5" data-salary="12-18" data-type="full-time">
+            <div class="card-header">
+                <div class="company-logo latest-badge">✨</div>
+                <div class="top-details">
+                    <h3 class="role">Backend Developer (Node.js)</h3>
+                    <span class="company-name">CloudScale Corp</span>
+                </div>
+                <div id="icon-bookmark">
+                    <i class="fa-regular fa-bookmark fa-2x"></i>
+                </div>
+            </div>
+            <div class="details">
+                <div class="left-details">
+                    <span class="location">📍 Remote, India</span>
+                    <span class="experience">💼 2-4 Yrs</span>
+                    <span class="mode">🏠 Remote</span>
+                    <span class="time-stamp">⏰ 2 hours ago</span>
+                </div>
+                <div class="right-details">
+                    <span class="salary">₹10 - 14 LPA</span>
+                </div>
+            </div>
+            <ul class="skills">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+            </ul>
+            <div class="card-actions">
+                <button class="btn-details">Jobs Details</button>
+            </div>
+        </div>
+
+        
+        <div class="job-card" data-category="frontend" data-location="bangalore" data-experience="3-5" data-salary="12-18" data-type="full-time">
+            <div class="card-header">
+                <div class="company-logo latest-badge">✨</div>
+                <div class="top-details">
+                    <h3 class="role">QA Automation Engineer</h3>
+                    <span class="company-name">DataSystems Inc</span>
+                </div>
+                <i class="fa-regular fa-bookmark fa-2x"></i>
+            </div>
+            <div class="details">
+                <div class="left-details">
+                    <span class="location">📍 Mumbai, India</span>
+                    <span class="experience">💼 1-3 Yrs</span>
+                    <span class="mode">🏢 Onsite</span>
+                    <span class="time-stamp">⏰ 5 hours ago</span>
+                </div>
+                <div class="right-details">
+                    <span class="salary">₹6 - 9 LPA</span>
+                </div>
+            </div>
+            <ul class="skills">
+                <li>Selenium</li>
+                <li>Java</li>
+            </ul>
+            <div class="card-actions">
+                <button class="btn-details">Jobs Details</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading-spinner" class="step-hidden">
+        Loading jobs...
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer-section">
+
+    <div id="footer-container">
+        
+        <div class="footer-column footer-brand">
+            <a href="#" class="footer-logo">DevJobs</a>
+            <p>Connecting top talent with the fastest-growing companies worldwide.</p>
+        </div>
+
+        <div class="footer-column footer-links">
+            <h4>Quick Links</h4>
+            <a href="#categories-section">Categories</a>
+            <a href="#latest-jobs-section">Latest Jobs</a>
+            <a href="#featured-section">Featured Jobs</a>
+        </div>
+
+        <div class="footer-column footer-links">
+            <h4>Support & Legal</h4>
+            <a href="#">Help Centre</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        
+    </div>
+
+    <div class="footer-base-strip">
+        <p>&copy; 2026 DevJobs. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="jobsdata.js"></script>
+<script src="render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+Sure:
+
+* Portfolio: `https://portfolio.example.com/muskan`
+* LinkedIn: `https://www.linkedin.com/in/muskan-example`
+ -->
